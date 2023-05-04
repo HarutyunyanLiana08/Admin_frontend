@@ -19,81 +19,81 @@ import {
    } = theme.useToken();
    const navigate = useNavigate()
    return (
-     <Layout>
-       <Sider trigger={null} collapsible collapsed={collapsed}>
-         <div className="logo" />
-         <Menu
-         onClick= {({key}) =>{
-            if(key === "signout"){
+//      <Layout>
+//        <Sider trigger={null} collapsible collapsed={collapsed}>
+//          <div className="logo" />
+//          <Menu
+//          onClick= {({key}) =>{
+//             if(key === "signout"){
 
-            }else{
-              navigate(key)
-            }
-          }}
-           theme="dark"
-           mode="inline"
-           defaultSelectedKeys={['1']}
-           items={[
-            {
-               key: 'allusers',
-               icon: <HiUsers />,
-               label: 'Users',
-             },
-             {
-               key: 'allproducts',
-               icon: <FaProductHunt />,
-               label: 'Products',
-             },
+//             }else{
+//               navigate(key)
+//             }
+//           }}
+//            theme="dark"
+//            mode="inline"
+//            defaultSelectedKeys={['1']}
+//            items={[
+//             {
+//                key: 'allusers',
+//                icon: <HiUsers />,
+//                label: 'Users',
+//              },
+//              {
+//                key: 'allproducts',
+//                icon: <FaProductHunt />,
+//                label: 'Products',
+//              },
          
-             {
-               key: 'allcategorys',
-               icon: <BiCategoryAlt />,
-               label: 'Categorys',
-             },
-             {
-              key: 'createcategorys',
-              icon: <MdCategory />,
-              label: 'Create Categorys',
-            },
-            {
-              key: 'createproducts',
-              icon: <CgProductHunt />,
-              label: 'Create Products',
-            }
-           ]}
-         />
-       </Sider>
-       <Layout>
-         <Header
-           style={{
-             padding: 0,
-             background: colorBgContainer,
-           }}
-         >
-           <Button
-             type="text"
-             icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
-             onClick={() => setCollapsed(!collapsed)}
-             style={{
-               fontSize: '16px',
-               width: 64,
-               height: 64,
-             }}
-           />
-         </Header>
-         <Content
-           style={{
-             margin: '24px 16px',
-             padding: 24,
-             minHeight: 280,
-             background: colorBgContainer,
-           }}
-         >
-           Content
-           <Outlet/>
-         </Content>
-       </Layout>
-     </Layout>
-   );
- };
+//              {
+//                key: 'allcategorys',
+//                icon: <BiCategoryAlt />,
+//                label: 'Categorys',
+//              },
+//              {
+//               key: 'createcategorys',
+//               icon: <MdCategory />,
+//               label: 'Create Categorys',
+//             },
+//             {
+//               key: 'createproducts',
+//               icon: <CgProductHunt />,
+//               label: 'Create Products',
+//             }
+//            ]}
+//          />
+//        </Sider>
+//        <Layout>
+//          <Header
+//            style={{
+//              padding: 0,
+//              background: colorBgContainer,
+//            }}
+//          >
+//            <Button
+//              type="text"
+//              icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
+//              onClick={() => setCollapsed(!collapsed)}
+//              style={{
+//                fontSize: '16px',
+//                width: 64,
+//                height: 64,
+//              }}
+//            />
+//          </Header>
+//          <Content
+//            style={{
+//              margin: '24px 16px',
+//              padding: 24,
+//              minHeight: 280,
+//              background: colorBgContainer,
+//            }}
+//          >
+//            Content
+//            <Outlet/>
+//          </Content>
+//        </Layout>
+//      </Layout>
+//    );
+//  };
  export default AdminPagef;
