@@ -45,15 +45,15 @@ const RegisterPagef = () => {
   const navigate = useNavigate()
 
  
-  // async function submitRegister(value){
-  //   console.log(value)
-  //     const response = await fetch("http://localhost:5000/register" , {
-  //       // mode:"no-cors",
-  //       method: 'POST',
-  //       body: JSON.stringify(value),
-  //       headers: {
-  //         "Content-Type":"application/json;charset=UTF-8",
-  //        },
+  async function submitRegister(value){
+    console.log(value)
+      const response = await fetch("http://localhost:5000/register" , {
+        // mode:"no-cors",
+        method: 'POST',
+        body: JSON.stringify(value),
+        headers: {
+          "Content-Type":"application/json;charset=UTF-8",
+         },
         
       })
 
